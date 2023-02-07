@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PortfolioController!
+{% endblock %}
+
+{% block body %}
+	<div class="section1" style="background-image: url({{asset("build/images/intro.jpg")}});">
+	<div class="presentation">
+	<h1 class="text-light"> Développeur web Junior</h1>
+	<p class="text-light">Titre professionel RCP</p>
+	<a class="btn btn-light rounded-pill p-2" href="{{ path('app_projects_index')}}"> Mes réalisation </a>
+	</div>
+	</div>
+
+
+	<section class="section2">
+		<div class="about">
+			<div class="title">
+				<img src="{{asset("build/images/pictoglobal.svg")}}" alt="">
+				<h2>A propos</h2>
+			</div>
+			<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				        Blanditiis earum ad laudantium non!
+				        Nulla culpa molestiae laboriosam non delectus voluptatum iste corrupti unde illum asperiores?
+				        Deserunt ipsum porro repellendus placeat.
+				        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				        Blanditiis earum ad laudantium non!
+				        Nulla culpa molestiae laboriosam non delectus voluptatum iste corrupti unde illum asperiores?
+				        Deserunt ipsum porro repellendus placeat.
+				        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				        Blanditiis earum ad laudantium non!
+			</p>
+		</div>
+
+		<div class="pictureMe">
+			<img src="{{asset("build/images/portrait.jpg")}}" alt="">
+		</div>
+	</section>
+	<section class="section3">
+	<div class="p1Picture">
+	<img src="{{asset("build/images/laposte1-removebg-preview.png")}}" alt="">
+	</div>
+	<div class="presentationProject">
+			<div class="title">
+							<img src="{{asset("build/images/pictoglobal.svg")}}" alt="">
+
+				<h2>Création du site internet de la poste</h2>
+			</div>
+			<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				        Blanditiis earum ad laudantium non!
+				        Nulla culpa molestiae laboriosam non delectus voluptatum iste corrupti unde illum asperiores?
+				        Deserunt ipsum porro repellendus placeat.
+				        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				        Blanditiis earum ad laudantium non!
+				        Nulla culpa molestiae laboriosam non delectus voluptatum iste corrupti unde illum asperiores?
+				        Deserunt ipsum porro repellendus placeat.
+				        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+				        Blanditiis earum ad laudantium non!
+			</p>
+			<a class="btn btn-primary " href="{{ path('app_projects_index') }}">Découvrir mes projets</a>
+		</div>
+	</section>
+	
+<section class="section4 mt-5 mb-5">
+<div class="hardskills d-flex flex-column">
+<img src="{{asset("build/images/pictoglobal.svg")}}"alt="">
+<h2 class="text-center">Hard skills</h2>
+<div class="skillsPicto d-flex justify-content-evenly">
+<img src="{{asset("build/images/picto1.svg")}}" alt="">
+<img src="{{asset("build/images/picto2.svg")}}" alt="">
+<img src="{{asset("build/images/picto3.svg")}}" alt="">
+<img src="{{asset("build/images/picto4.svg")}}" alt="">
+<img src="{{asset("build/images/picto5.svg")}}" alt="">
+</div>
+
+</div>
+
+</section>
+	
+	
+	
+
+
+{% endblock %}

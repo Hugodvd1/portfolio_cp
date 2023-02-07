@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<div class="mainProject1">
+
+		<div class="project1">
+
+			<div class="textprojet">
+				<h2>{{ projects.title }}</h2>
+				<h3>Contexte</h3>
+				<p>{{projects.content}}</p>
+				<h4>Objectifs</h4>
+				<p>{{projects.objectif}}
+				</p>
+				<button class="btn btn-primary rounded-pill p-2 text-decoration-none">
+					<a class="text-white text-decoration-none" href="{{ path('app_projects_index')}}">Retour a la liste des projets</a>
+				</button>
+			</div>
+
+			<div class="imgProjet">
+				<img src="{{asset("build/images/laposte1-removebg-preview.png")}}" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<img src="{{asset("build/images/laposte4.png")}}" alt="">
+		<div class="d-flex flex-row justify-content-center gap-3">
+			{% for tag in projects.tags %}
+
+				<button class="btn btn-light text-dark btn-lg rounded-pill p-2">{{tag.stacks}}</button>
+
+			{% endfor %}
+		</div>
+	</div>
+	<div class="container">
+		<img class="imgLaposte" src="{{asset("build/images/laposte2.png")}}" alt="">
+		<img class="imgLaposte" src="{{asset("build/images/laposte3.png")}}" alt="">
+	</div>
+
+{% endblock %}

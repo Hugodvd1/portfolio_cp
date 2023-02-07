@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mes réalisations
+{% endblock %}
+
+{% block body %}
+	<div class="mainProject">
+		{% for project in projects %}
+
+			<div class="project1">
+
+				<div class="textprojet">
+					<h2>{{ project.title }}</h2>
+					<h3>Contexte</h3>
+					<p>{{project.content}}</p>
+					<h4>Objectifs</h4>
+					<p>{{project.objectif}}
+					</p>
+					<button class="btn btn-primary rounded-pill p-2">
+						<a class="text-white" href="{{ path('app_projects_show', {'id' : project.id})}}">Voir le projet complet</a>
+					</button>
+                    {# {{ path('app_project_show', {'id':project.id}) }} #}
+				</div>
+
+				<div class="imgProjet">
+					<img src="{{asset("build/images/mockup.png")}}" alt="">
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

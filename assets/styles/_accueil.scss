@@ -1,0 +1,173 @@
+.section2 {
+    display: flex;
+    align-items: center;
+    margin: 2rem 10rem 0 10rem;
+
+}
+
+.title {
+    display: flex;
+}
+
+.title img {
+    height: 10px;
+    margin-top: 12px;
+    margin-right: 5px;
+}
+
+.about p {
+    display: flex;
+    flex-direction: inline-block;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.pictureMe img {
+    height: 20rem;
+    width: auto;
+    border-radius: 5px;
+
+}
+
+.pictureMe {
+    flex-shrink: 0;
+}
+
+
+.section1 {
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 {
+    // margin: 2rem 10rem 0 10rem;
+    padding: 4rem;
+    display: flex;
+    margin: 3rem 0 0 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #f7f7f7;
+}
+
+.presentationProject p {
+        display: flex;
+        flex-direction: inline-block;
+        align-items: center;
+        margin-right: 10rem;
+    }
+
+.p1Picture {
+    flex-shrink: 0;
+    width: 43rem;
+}
+
+
+.hardskills img {
+    height: 10px;
+    margin-top: 12px;
+    margin-right: 5px;
+}
+
+.skillsPicto img {
+   height: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .main {
+        margin: 0;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 3rem 0 3rem;
+    }
+    
+    .about p {
+        margin-right: 0;
+        font-size: xx-large;
+
+    }
+
+    .pictureMe img {
+         height: auto; 
+         width: auto; 
+        border-radius: 5px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
+.section3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.presentationProject p {
+    font-size: xx-large;
+    margin-right: 0;
+
+}
+
+.presentationProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.p1Picture {
+    width: auto;
+    display: flex;
+}
+
+.p1Picture img {
+    max-width:max-content;
+}
+
+.project1 {
+    margin: 2rem 3rem 0 3rem;
+}
+   
+}

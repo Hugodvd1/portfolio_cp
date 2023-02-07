@@ -1,0 +1,32 @@
+.footerTop {
+    padding: 3rem 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footerBottom {
+    height: 2rem;
+    background-color: #3636f2;
+    text-decoration: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logowhite {
+    max-width: 15rem;
+}
+
+@media screen and (max-width: 600px) {
+.containerFooter {
+    flex-direction: column;
+}
+
+.logowhite {
+    display: none;
+}
+
+
+}

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LoginController!
+{% endblock %}
+
+{% block body %}
+
+	<section class="sectionLogin d-flex flex-column w-100 justify-content-center align-items-center">
+		<div class="titleLogin d-flex flex-column w-50">
+			<img src="{{asset("build/images/pictoglobal.svg")}}" alt="">
+			<h2 class="text-center">Espace Administration</h2>
+		</div>
+		{% if error %}
+			<div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+		{% endif %}
+
+		<form class="formLogin" action="{{ path('app_login') }}" method="post">
+			<label for="username">Email:</label>
+			<input class="form-control" type="text" id="username" name="_username" value="{{ last_username }}">
+
+			{# <label for="password">Password:</label>
+			<input type="password" id="password" name="_password"> #}
+
+			<div class="col-auto">
+				<label for="inputPassword6" class="col-form-label">Password</label>
+			</div>
+			<div class="col-auto">
+				<input type="password" id="password" class="form-control" name="_password" aria-describedby="passwordHelpInline">
+			</div>
+
+			{# If you want to control the URL the user is redirected to on success #}
+			<input type="hidden" name="_target_path" value="/admin/projects/">
+			<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+			<button class="btn btn-primary mt-2" type="submit">Login</button>
+		</form>
+	</section>
+{% endblock %}

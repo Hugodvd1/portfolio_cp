@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/bootstrap";
+@import '_footer.scss';
+@import '_accueil.scss';
+@import '_login.scss';
+@import 'projects.scss';
+
+
+
+// main {
+//     margin: 0 10rem 0 10rem;
+// }
+
+html, body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex-shrink: 0;
+  }
+
+img {
+  max-width: 100%;
+}

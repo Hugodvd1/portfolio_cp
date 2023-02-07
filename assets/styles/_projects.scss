@@ -1,0 +1,85 @@
+.project1 {
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 10rem 0 10rem;
+ 
+}
+
+.mainProject {
+    background: linear-gradient(356deg, #d5d5d5, transparent);
+
+}
+
+.mainProject1 {
+    background: linear-gradient(rgb(226, 225, 225), white)
+
+}
+
+.imgProjet img {
+    max-height: 15rem;
+
+}
+
+.textproject {
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+}
+
+.tags {
+border-radius: 30px 30px 30px 30px;
+
+}
+
+.imgLaposte {
+    width: 40rem;
+}
+
+
+
+// Responsive 
+
+
+@media screen and (max-width: 576px) {
+    .project1 {
+        height: auto; 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        flex-direction: column;
+
+}
+
+
+.textprojet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 3rem 0 3rem;
+}
+
+p {
+    font-size: xx-large;
+}
+
+.imgProjet img {
+    max-height:max-content;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+}
